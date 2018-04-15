@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_XImboECfEeifG4HmccecKA" name="Hackday Profile" metaclassReference="_FSOagECgEeifG4HmccecKA">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_khItkECgEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_khJUoECgEeifG4HmccecKA" name="HackdayProfile" nsURI="http:///schemas/HackdayProfile/_khFqQECgEeifG4HmccecKA/0" nsPrefix="HackdayProfile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_khJUoUCgEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_khJUokCgEeifG4HmccecKA" key="originalName" value="Hackday Profile"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_khJ7sUCgEeifG4HmccecKA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_khJ7skCgEeifG4HmccecKA" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_khJ7s0CgEeifG4HmccecKA" key="Comment" value="A profile for stereotyping hackday models."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_khJ7tECgEeifG4HmccecKA" key="Copyright" value="(C) rsanz.com"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_khJ7tUCgEeifG4HmccecKA" key="Date" value="2018-04-15"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_khJ7tkCgEeifG4HmccecKA" key="Author" value="Ricardo Sanz"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_khJUo0CgEeifG4HmccecKA" name="Milestone">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_khJUpECgEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8vuN8ECfEeifG4HmccecKA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_khJUpUCgEeifG4HmccecKA" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_FSOagECgEeifG4HmccecKA" alias="Class">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_XLW0sECfEeifG4HmccecKA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_XLXbwECfEeifG4HmccecKA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_8vuN8ECfEeifG4HmccecKA" name="Milestone">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GYzBAECgEeifG4HmccecKA" name="base_Class" association="_GYv9sECgEeifG4HmccecKA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_GYv9sECgEeifG4HmccecKA" name="E_Milestone_Class5" memberEnd="_GYyZ8ECgEeifG4HmccecKA _GYzBAECgEeifG4HmccecKA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_GYyZ8ECgEeifG4HmccecKA" name="extension_Milestone" type="_8vuN8ECfEeifG4HmccecKA" aggregation="composite" association="_GYv9sECgEeifG4HmccecKA"/>
+  </packagedElement>
+</uml:Profile>

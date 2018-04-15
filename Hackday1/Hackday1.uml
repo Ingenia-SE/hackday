@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:HackdayProfile="http:///schemas/HackdayProfile/_khFqQECgEeifG4HmccecKA/0" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http:///schemas/HackdayProfile/_khFqQECgEeifG4HmccecKA/0 Hackday.profile.uml#_khJUoECgEeifG4HmccecKA http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+  <uml:Model xmi:id="_5RK08EAGEeifG4HmccecKA" name="Hackday1">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_IgLVwEAHEeifG4HmccecKA">
+      <body>The Hackday 1 challenge is a one day challenge to capture a video of a firefight drone operating on a structure on fire. The purpose of the challenge is to break the ice concering the implementation of a drone system for the MBZIRC challenge. </body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_otJMgEAHEeifG4HmccecKA">
+      <body>Author: RS
+Date: 2018/04/16
+Version: 1.0
+Status: Draft</body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_51VR8EAGEeifG4HmccecKA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_BzKrMEAHEeifG4HmccecKA" name="Requirements">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_uf8RgEDLEeifG4HmccecKA" annotatedElement="_IxV-MEDLEeifG4HmccecKA _ASDCAECcEeifG4HmccecKA">
+        <body>Beware: Fidelity of simulation is considered irrelevant.
+</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tCv-AEALEeifG4HmccecKA" name="Hackday Goals" visibility="package">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_RluywEAMEeifG4HmccecKA" name="Simulate MBZIRC">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_0aNRUECbEeifG4HmccecKA" name="Platform"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ASDCAECcEeifG4HmccecKA" name="Drone controller"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_YfA-wEAMEeifG4HmccecKA" name="Software control">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_wFwusECdEeifG4HmccecKA" name="Manual and/or automatic control"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_M8dNMECeEeifG4HmccecKA" name="User Controls"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_cZcM8EAMEeifG4HmccecKA" name="Grading">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_gwE2AEAMEeifG4HmccecKA" name="Fulfil Requirements"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Z_jMEEDKEeifG4HmccecKA" name="Milestone bonus"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_IxV-MEDLEeifG4HmccecKA" name="Quality"/>
+        </nestedClassifier>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DO2mEEAHEeifG4HmccecKA" name="System">
+      <packagedElement xmi:type="uml:Package" xmi:id="_TyB8sECEEeifG4HmccecKA" name="SystemElements">
+        <packagedElement xmi:type="uml:Class" xmi:id="_zskugEAHEeifG4HmccecKA" name="Drone"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_018xYEAHEeifG4HmccecKA" name="Building"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_1qFkEEAHEeifG4HmccecKA" name="Fire"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_2iGKIEAHEeifG4HmccecKA" name="OperatorStation"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_4o9wAEAHEeifG4HmccecKA" name="Simulator"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BnHg4ECDEeifG4HmccecKA" name="Controller"/>
+        <packagedElement xmi:type="uml:Actor" xmi:id="_yeOsEEAHEeifG4HmccecKA" name="Pilot"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DrJrEEAIEeifG4HmccecKA" name="SoI" visibility="package"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Xx3PUECEEeifG4HmccecKA" name="SystemRelations">
+        <packagedElement xmi:type="uml:Association" xmi:id="_Nu1WgEAIEeifG4HmccecKA" name="the_pilot" memberEnd="_Nu4Z0EAIEeifG4HmccecKA _Nu5A4EAIEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Nu3LsEAIEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Nu3LsUAIEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Nu4Z0EAIEeifG4HmccecKA" name="pilot" type="_yeOsEEAHEeifG4HmccecKA" aggregation="shared" association="_Nu1WgEAIEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Nu5A4EAIEeifG4HmccecKA" name="soi" type="_DrJrEEAIEeifG4HmccecKA" association="_Nu1WgEAIEeifG4HmccecKA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IkJk4EAJEeifG4HmccecKA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IkXAQEAJEeifG4HmccecKA" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_PHBRcEAIEeifG4HmccecKA" name="the_os" memberEnd="_PHB4gkAIEeifG4HmccecKA _PHB4g0AIEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PHB4gEAIEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PHB4gUAIEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_PHB4gkAIEeifG4HmccecKA" name="operatorstation" type="_2iGKIEAHEeifG4HmccecKA" aggregation="composite" association="_PHBRcEAIEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_PHB4g0AIEeifG4HmccecKA" name="soi" type="_DrJrEEAIEeifG4HmccecKA" association="_PHBRcEAIEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_P30cQEAIEeifG4HmccecKA" name="the_simulator" memberEnd="_P31DUkAIEeifG4HmccecKA _P31DU0AIEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P31DUEAIEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P31DUUAIEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_P31DUkAIEeifG4HmccecKA" name="simulator" type="_4o9wAEAHEeifG4HmccecKA" aggregation="composite" association="_P30cQEAIEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_P31DU0AIEeifG4HmccecKA" name="soi" type="_DrJrEEAIEeifG4HmccecKA" association="_P30cQEAIEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Qq9JYEAIEeifG4HmccecKA" name="the_drone" memberEnd="_Qq9wckAIEeifG4HmccecKA _Qq-XgEAIEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Qq9wcEAIEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qq9wcUAIEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Qq9wckAIEeifG4HmccecKA" name="drone" type="_zskugEAHEeifG4HmccecKA" aggregation="composite" association="_Qq9JYEAIEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Qq-XgEAIEeifG4HmccecKA" name="simulator" type="_4o9wAEAHEeifG4HmccecKA" association="_Qq9JYEAIEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_RITMsEAIEeifG4HmccecKA" name="the_building" memberEnd="_RITzwkAIEeifG4HmccecKA _RITzw0AIEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RITzwEAIEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RITzwUAIEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_RITzwkAIEeifG4HmccecKA" name="building" type="_018xYEAHEeifG4HmccecKA" aggregation="composite" association="_RITMsEAIEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_RITzw0AIEeifG4HmccecKA" name="simulator" type="_4o9wAEAHEeifG4HmccecKA" association="_RITMsEAIEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Rm7CYEAIEeifG4HmccecKA" name="the_fire" memberEnd="_Rm7pckAIEeifG4HmccecKA _Rm7pc0AIEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rm7pcEAIEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Rm7pcUAIEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Rm7pckAIEeifG4HmccecKA" name="fire" type="_1qFkEEAHEeifG4HmccecKA" aggregation="composite" association="_Rm7CYEAIEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Rm7pc0AIEeifG4HmccecKA" name="simulator" type="_4o9wAEAHEeifG4HmccecKA" association="_Rm7CYEAIEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_GUTBsECDEeifG4HmccecKA" name="the_controller" memberEnd="_GUTowECDEeifG4HmccecKA _GUTowUCDEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GUTBsUCDEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GUTBskCDEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_GUTowECDEeifG4HmccecKA" name="controller" type="_BnHg4ECDEeifG4HmccecKA" aggregation="composite" association="_GUTBsECDEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_GUTowUCDEeifG4HmccecKA" name="operatorstation" type="_2iGKIEAHEeifG4HmccecKA" association="_GUTBsECDEeifG4HmccecKA"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_TWIOYECFEeifG4HmccecKA" client="_DO2mEEAHEeifG4HmccecKA" supplier="_BzKrMEAHEeifG4HmccecKA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_McI78EB-EeifG4HmccecKA" name="Evaluation">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_fg0noECbEeifG4HmccecKA">
+        <body>Fidelity of simulation is irrelevant. Hence detailed behavior, timing, precision, resolution, video quality, etc. will not be evaluated.
+</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_SpLBwECFEeifG4HmccecKA" client="_McI78EB-EeifG4HmccecKA" supplier="_BzKrMEAHEeifG4HmccecKA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_T6YyAECFEeifG4HmccecKA" client="_McI78EB-EeifG4HmccecKA" supplier="_DO2mEEAHEeifG4HmccecKA"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_E_G9IECTEeifG4HmccecKA" name="EvaluationRelations">
+        <packagedElement xmi:type="uml:Association" xmi:id="_mSMk4ECHEeifG4HmccecKA" name="Block17" memberEnd="_mSNzAkCHEeifG4HmccecKA _mSNzA0CHEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mSNzAECHEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mSNzAUCHEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_mSNzAkCHEeifG4HmccecKA" name="simulate drone" type="_HOZ8sECHEeifG4HmccecKA" aggregation="composite" association="_mSMk4ECHEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_mSNzA0CHEeifG4HmccecKA" name="intermediate milestones evaluation" type="_rA4McECFEeifG4HmccecKA" association="_mSMk4ECHEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_YU1RIECSEeifG4HmccecKA" name="Block18" memberEnd="_YU14MkCSEeifG4HmccecKA _YU2fQECSEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YU14MECSEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YU14MUCSEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_YU14MkCSEeifG4HmccecKA" name="simulate building with fire" type="_ItjbQECHEeifG4HmccecKA" aggregation="composite" association="_YU1RIECSEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_YU2fQECSEeifG4HmccecKA" name="intermediate milestones evaluation" type="_rA4McECFEeifG4HmccecKA" association="_YU1RIECSEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_gek_cECSEeifG4HmccecKA" name="Block19" memberEnd="_gelmgkCSEeifG4HmccecKA _gemNkECSEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gelmgECSEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gelmgUCSEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_gelmgkCSEeifG4HmccecKA" name="fly drone" type="_Kh9_MECHEeifG4HmccecKA" aggregation="composite" association="_gek_cECSEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_gemNkECSEeifG4HmccecKA" name="intermediate milestones evaluation" type="_rA4McECFEeifG4HmccecKA" association="_gek_cECSEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_hIZYgECSEeifG4HmccecKA" name="Block20" memberEnd="_hIZ_kkCSEeifG4HmccecKA _hIZ_k0CSEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hIZ_kECSEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hIZ_kUCSEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_hIZ_kkCSEeifG4HmccecKA" name="fly drone by app" type="_MGLj8ECHEeifG4HmccecKA" aggregation="composite" association="_hIZYgECSEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_hIZ_k0CSEeifG4HmccecKA" name="intermediate milestones evaluation" type="_rA4McECFEeifG4HmccecKA" association="_hIZYgECSEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_htMusECSEeifG4HmccecKA" name="Block21" memberEnd="_htNVwkCSEeifG4HmccecKA _htN80ECSEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_htNVwECSEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_htNVwUCSEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_htNVwkCSEeifG4HmccecKA" name="capture video" type="_Paud4ECHEeifG4HmccecKA" aggregation="composite" association="_htMusECSEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_htN80ECSEeifG4HmccecKA" name="intermediate milestones evaluation" type="_rA4McECFEeifG4HmccecKA" association="_htMusECSEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_iT9MsECSEeifG4HmccecKA" name="Block22" memberEnd="_iT9zwkCSEeifG4HmccecKA _iT9zw0CSEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iT9zwECSEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iT9zwUCSEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_iT9zwkCSEeifG4HmccecKA" name="capture mbzirc video" type="_RB1loECHEeifG4HmccecKA" aggregation="composite" association="_iT9MsECSEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_iT9zw0CSEeifG4HmccecKA" name="intermediate milestones evaluation" type="_rA4McECFEeifG4HmccecKA" association="_iT9MsECSEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_i2n04ECSEeifG4HmccecKA" name="Block23" memberEnd="_i2ob8UCSEeifG4HmccecKA _i2ob8kCSEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i2n04UCSEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i2ob8ECSEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_i2ob8UCSEeifG4HmccecKA" name="upload app and video" type="_TxykwECHEeifG4HmccecKA" aggregation="composite" association="_i2n04ECSEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_i2ob8kCSEeifG4HmccecKA" name="intermediate milestones evaluation" type="_rA4McECFEeifG4HmccecKA" association="_i2n04ECSEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Rn1rIECGEeifG4HmccecKA" name="Block7" memberEnd="_Rn1rI0CGEeifG4HmccecKA _Rn2SMECGEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rn1rIUCGEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Rn1rIkCGEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Rn1rI0CGEeifG4HmccecKA" name="intermediate milestones evaluation" type="_rA4McECFEeifG4HmccecKA" aggregation="composite" association="_Rn1rIECGEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Rn2SMECGEeifG4HmccecKA" name="evaluation" type="_PtnaIECGEeifG4HmccecKA" association="_Rn1rIECGEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_SxHAUECGEeifG4HmccecKA" name="Block8" memberEnd="_SxHnYECGEeifG4HmccecKA _SxHnYUCGEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SxHAUUCGEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SxHAUkCGEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_SxHnYECGEeifG4HmccecKA" name="aceptance evaluation" type="_1Y6XQECFEeifG4HmccecKA" aggregation="composite" association="_SxHAUECGEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_SxHnYUCGEeifG4HmccecKA" name="evaluation" type="_PtnaIECGEeifG4HmccecKA" association="_SxHAUECGEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_TP6cMECGEeifG4HmccecKA" name="Block9" memberEnd="_TP6cM0CGEeifG4HmccecKA _TP7DQECGEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TP6cMUCGEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TP6cMkCGEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_TP6cM0CGEeifG4HmccecKA" name="quality evaluation" type="_3ixmwECFEeifG4HmccecKA" aggregation="composite" association="_TP6cMECGEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_TP7DQECGEeifG4HmccecKA" name="evaluation" type="_PtnaIECGEeifG4HmccecKA" association="_TP6cMECGEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_HrWAQECbEeifG4HmccecKA" name="Block8" memberEnd="_HrWnUkCbEeifG4HmccecKA _HrXOYECbEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HrWnUECbEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HrWnUUCbEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_HrWnUkCbEeifG4HmccecKA" name="upload  video" type="__VB1kECaEeifG4HmccecKA" aggregation="composite" association="_HrWAQECbEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_HrXOYECbEeifG4HmccecKA" name="aceptance evaluation" type="_FLWL4ECfEeifG4HmccecKA" association="_HrWAQECbEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_IV1uwECbEeifG4HmccecKA" name="Block9" memberEnd="_IV1uw0CbEeifG4HmccecKA _IV2V0ECbEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IV1uwUCbEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IV1uwkCbEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_IV1uw0CbEeifG4HmccecKA" name="upload controller" type="_DA9UwECbEeifG4HmccecKA" aggregation="composite" association="_IV1uwECbEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_IV2V0ECbEeifG4HmccecKA" name="aceptance evaluation" type="_FLWL4ECfEeifG4HmccecKA" association="_IV1uwECbEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_YuSj4ECbEeifG4HmccecKA" name="Block11" memberEnd="_YuTK8kCbEeifG4HmccecKA _YuTyAECbEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YuTK8ECbEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YuTK8UCbEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_YuTK8kCbEeifG4HmccecKA" name="code quality" type="_T9yCQECbEeifG4HmccecKA" aggregation="composite" association="_YuSj4ECbEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_YuTyAECbEeifG4HmccecKA" name="quality evaluation" type="_3ixmwECFEeifG4HmccecKA" association="_YuSj4ECbEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_OYFBMECfEeifG4HmccecKA" name="Block14" memberEnd="_OYFoQECfEeifG4HmccecKA _OYFoQUCfEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OYFBMUCfEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OYFBMkCfEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_OYFoQECfEeifG4HmccecKA" name="requirement fulfilment" type="_FLWL4ECfEeifG4HmccecKA" aggregation="composite" association="_OYFBMECfEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_OYFoQUCfEeifG4HmccecKA" name="aceptance evaluation" type="_1Y6XQECFEeifG4HmccecKA" association="_OYFBMECfEeifG4HmccecKA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3VQXEECkEeifG4HmccecKA" name="Block8" memberEnd="_3VQ-IkCkEeifG4HmccecKA _3VRlMECkEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3VQ-IECkEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3VQ-IUCkEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3VQ-IkCkEeifG4HmccecKA" name="other requirements" type="_yMGE4ECkEeifG4HmccecKA" aggregation="composite" association="_3VQXEECkEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3VRlMECkEeifG4HmccecKA" name="requirement fulfilment" type="_FLWL4ECfEeifG4HmccecKA" association="_3VQXEECkEeifG4HmccecKA"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_UiKLkECkEeifG4HmccecKA" name="EvaluationElements">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_xTWF4EDOEeifG4HmccecKA" annotatedElement="_TxykwECHEeifG4HmccecKA">
+          <body>Main milestone.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FLWL4ECfEeifG4HmccecKA" name="Requirement fulfilment"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_T9yCQECbEeifG4HmccecKA" name="Code Quality"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DA9UwECbEeifG4HmccecKA" name="Upload controller"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__VB1kECaEeifG4HmccecKA" name="Upload  Video"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_PtnaIECGEeifG4HmccecKA" name="Evaluation">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_T8vF8ECGEeifG4HmccecKA" name="Grade">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_rA4McECFEeifG4HmccecKA" name="Milestones Evaluation">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_7cwwEECFEeifG4HmccecKA" name="M_Grade" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_HOZ8sECHEeifG4HmccecKA" name="Simulate drone"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_ItjbQECHEeifG4HmccecKA" name="Simulate building with fire"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Kh9_MECHEeifG4HmccecKA" name="Fly drone"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_MGLj8ECHEeifG4HmccecKA" name="Fly drone by controller"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Paud4ECHEeifG4HmccecKA" name="Capture video"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_RB1loECHEeifG4HmccecKA" name="Capture MBZIRC video"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TxykwECHEeifG4HmccecKA" name="Upload controller, model and video"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_1Y6XQECFEeifG4HmccecKA" name="Acceptance Evaluation">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_NQ9KcECGEeifG4HmccecKA" name="A_Grade">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_3ixmwECFEeifG4HmccecKA" name="Quality Evaluation">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_OYT0EECGEeifG4HmccecKA" name="Q_Grade">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yMGE4ECkEeifG4HmccecKA" name="Other Requirements"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ITi_MEDcEeifG4HmccecKA" name="CopyOf_Code Quality_9"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_e-r6YEDcEeifG4HmccecKA" name="Model Quality"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_6qodAEDcEeifG4HmccecKA" name="Block10" memberEnd="_6qpEEEDcEeifG4HmccecKA _6qprIEDcEeifG4HmccecKA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6qodAUDcEeifG4HmccecKA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6qodAkDcEeifG4HmccecKA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_6qpEEEDcEeifG4HmccecKA" name="model quality" type="_e-r6YEDcEeifG4HmccecKA" aggregation="composite" association="_6qodAEDcEeifG4HmccecKA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_6qprIEDcEeifG4HmccecKA" name="quality evaluation" type="_3ixmwECFEeifG4HmccecKA" association="_6qodAEDcEeifG4HmccecKA"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_51EzQEAGEeifG4HmccecKA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51K54EAGEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_51NWIEAGEeifG4HmccecKA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51N9MEAGEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_51RnkEAGEeifG4HmccecKA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51RnkUAGEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_51SOoEAGEeifG4HmccecKA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51SOoUAGEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_51SOokAGEeifG4HmccecKA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51S1sEAGEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_51S1sUAGEeifG4HmccecKA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51S1skAGEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_51TcwEAGEeifG4HmccecKA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51TcwUAGEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_51TcwkAGEeifG4HmccecKA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51Tcw0AGEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_51TcxEAGEeifG4HmccecKA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51UD0EAGEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_51UD0UAGEeifG4HmccecKA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51Uq4EAGEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_us9oYECgEeifG4HmccecKA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_utJOkECgEeifG4HmccecKA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_utJOkUCgEeifG4HmccecKA" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_utJOkkCgEeifG4HmccecKA" key="Comment" value="A profile for stereotyping hackday models."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_utJOk0CgEeifG4HmccecKA" key="Copyright" value="(C) rsanz.com"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_utJOlECgEeifG4HmccecKA" key="Date" value="2018-04-15"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_utJOlUCgEeifG4HmccecKA" key="Author" value="Ricardo Sanz"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_us-PcECgEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Hackday.profile.uml#_khJUoECgEeifG4HmccecKA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="Hackday.profile.uml#_XImboECfEeifG4HmccecKA"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_z0XYkEAHEeifG4HmccecKA" base_Class="_zskugEAHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_02EGIEAHEeifG4HmccecKA" base_Class="_018xYEAHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_1qMRwEAHEeifG4HmccecKA" base_Class="_1qFkEEAHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_2iNe4EAHEeifG4HmccecKA" base_Class="_2iGKIEAHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_4pEdsEAHEeifG4HmccecKA" base_Class="_4o9wAEAHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_DrQYwEAIEeifG4HmccecKA" base_Class="_DrJrEEAIEeifG4HmccecKA"/>
+  <Requirements:Requirement xmi:id="_tC4g4EALEeifG4HmccecKA" base_Class="_tCv-AEALEeifG4HmccecKA" id="R-0" text="A system (the system-of-interest - SoI) will be implemented to simulate the MBZIRC challenge of a drone fighting a fire in a building. The drome will be controlled by a program. Grading will be multidimensional and competitive.&#xA;"/>
+  <Requirements:Requirement xmi:id="_Rl05YEAMEeifG4HmccecKA" base_Class="_RluywEAMEeifG4HmccecKA" id="R-1" text="The system shall simulate the MBZIRC challenge of a drone fighting a fire in a building."/>
+  <Requirements:Requirement xmi:id="_YfGeUEAMEeifG4HmccecKA" base_Class="_YfA-wEAMEeifG4HmccecKA" id="R-2" text="Drone is controlled by software."/>
+  <Requirements:Requirement xmi:id="_cZhsgEAMEeifG4HmccecKA" base_Class="_cZcM8EAMEeifG4HmccecKA" id="R-3" text="Grading will be multidimensional."/>
+  <Requirements:Requirement xmi:id="_gwKVkEAMEeifG4HmccecKA" base_Class="_gwE2AEAMEeifG4HmccecKA" id="R-3.1" text="Requirement fulfillment will be evaluated so it is important to address all them adequately."/>
+  <Blocks:Block xmi:id="_BnNAcECDEeifG4HmccecKA" base_Class="_BnHg4ECDEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_rHULoECFEeifG4HmccecKA" base_Class="_rA4McECFEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_1Y-osECFEeifG4HmccecKA" base_Class="_1Y6XQECFEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_3i3GUECFEeifG4HmccecKA" base_Class="_3ixmwECFEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_PtsSoECGEeifG4HmccecKA" base_Class="_PtnaIECGEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_HOfcQECHEeifG4HmccecKA" base_Class="_HOZ8sECHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_Ito60ECHEeifG4HmccecKA" base_Class="_ItjbQECHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_KiI-UECHEeifG4HmccecKA" base_Class="_Kh9_MECHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_MGRDgECHEeifG4HmccecKA" base_Class="_MGLj8ECHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_PazWYECHEeifG4HmccecKA" base_Class="_Paud4ECHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_RB6eIECHEeifG4HmccecKA" base_Class="_RB1loECHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_Tx4EUECHEeifG4HmccecKA" base_Class="_TxykwECHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="__VHVIECaEeifG4HmccecKA" base_Class="__VB1kECaEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_DBC0UECbEeifG4HmccecKA" base_Class="_DA9UwECbEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_T926wECbEeifG4HmccecKA" base_Class="_T9yCQECbEeifG4HmccecKA"/>
+  <Requirements:Requirement xmi:id="_0aSw4ECbEeifG4HmccecKA" base_Class="_0aNRUECbEeifG4HmccecKA" id="R-1.1" text="The application runs on a conventional host -e.g. Windows or Linux or OSX or Android or iOS."/>
+  <Requirements:Requirement xmi:id="_ASH6gECcEeifG4HmccecKA" base_Class="_ASDCAECcEeifG4HmccecKA" id="R-1.2" text="The controller application will communicate with a simulated drone to control it.&#xD;&#xA;"/>
+  <Requirements:Requirement xmi:id="_wF2OQECdEeifG4HmccecKA" base_Class="_wFwusECdEeifG4HmccecKA" id="R-2.1" text="The application is used to pilot the drone; automatically and/or manually.&#xD;&#xA;"/>
+  <Requirements:Requirement xmi:id="_M8jT0ECeEeifG4HmccecKA" base_Class="_M8dNMECeEeifG4HmccecKA" id="R-2.2" text="The human pilot may use the UI resources of a common computer -mouse, keyboard, screen- to operate the drone in addition to the automatic control by the application. &#xD;&#xA;"/>
+  <Blocks:Block xmi:id="_FLbrcECfEeifG4HmccecKA" base_Class="_FLWL4ECfEeifG4HmccecKA"/>
+  <HackdayProfile:Milestone xmi:id="_w52WsECgEeifG4HmccecKA" base_Class="_HOZ8sECHEeifG4HmccecKA"/>
+  <HackdayProfile:Milestone xmi:id="_0aNfEECgEeifG4HmccecKA" base_Class="_ItjbQECHEeifG4HmccecKA"/>
+  <HackdayProfile:Milestone xmi:id="_2E77gECgEeifG4HmccecKA" base_Class="_Kh9_MECHEeifG4HmccecKA"/>
+  <HackdayProfile:Milestone xmi:id="_3vCF0ECgEeifG4HmccecKA" base_Class="_MGLj8ECHEeifG4HmccecKA"/>
+  <HackdayProfile:Milestone xmi:id="_4gxEwECgEeifG4HmccecKA" base_Class="_Paud4ECHEeifG4HmccecKA"/>
+  <HackdayProfile:Milestone xmi:id="_5X7WQECgEeifG4HmccecKA" base_Class="_RB1loECHEeifG4HmccecKA"/>
+  <HackdayProfile:Milestone xmi:id="_6OdVoECgEeifG4HmccecKA" base_Class="_TxykwECHEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_yMLkcECkEeifG4HmccecKA" base_Class="_yMGE4ECkEeifG4HmccecKA"/>
+  <Requirements:Requirement xmi:id="_Z_oEkEDKEeifG4HmccecKA" base_Class="_Z_jMEEDKEeifG4HmccecKA" id="R-3.2" text="Final and intermediate SoI milestones will be evaluated."/>
+  <Requirements:Requirement xmi:id="_Ixa2sEDLEeifG4HmccecKA" base_Class="_IxV-MEDLEeifG4HmccecKA" id="R-3.3" text="System quality will be assessed."/>
+  <Blocks:Block xmi:id="_IToewEDcEeifG4HmccecKA" base_Class="_ITi_MEDcEeifG4HmccecKA"/>
+  <Blocks:Block xmi:id="_e-yBAEDcEeifG4HmccecKA" base_Class="_e-r6YEDcEeifG4HmccecKA"/>
+</xmi:XMI>

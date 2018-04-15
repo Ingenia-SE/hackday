@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jNaRUECfEeifG4HmccecKA" type="PapyrusUMLProfileDiagram" name="HackdayProfile" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_8vvcEECfEeifG4HmccecKA" type="Stereotype_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_8vvcEkCfEeifG4HmccecKA" type="Stereotype_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_8vvcE0CfEeifG4HmccecKA" visible="false" type="Stereotype_AttributeCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_8vvcFECfEeifG4HmccecKA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_8vvcFUCfEeifG4HmccecKA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_8vvcFkCfEeifG4HmccecKA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8vvcF0CfEeifG4HmccecKA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_8vvcGECfEeifG4HmccecKA" visible="false" type="Stereotype_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_8vvcGUCfEeifG4HmccecKA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_8vvcGkCfEeifG4HmccecKA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_8vvcG0CfEeifG4HmccecKA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8vvcHECfEeifG4HmccecKA"/>
+    </children>
+    <element xmi:type="uml:Stereotype" href="Hackday.profile.uml#_8vuN8ECfEeifG4HmccecKA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8vvcEUCfEeifG4HmccecKA" x="306" y="274" width="121"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_FSPooECgEeifG4HmccecKA" type="Class_MetaclassShape">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FSQPsECgEeifG4HmccecKA" source="Stereotype_Annotation">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FSQPsUCgEeifG4HmccecKA" key="StereotypeWithQualifiedNameList" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FSQPskCgEeifG4HmccecKA" key="StereotypeList" value="StandardProfile::Metaclass"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FSQPs0CgEeifG4HmccecKA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FSQPtECgEeifG4HmccecKA" key="PropStereoDisplay" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FSQPtUCgEeifG4HmccecKA" key="StereotypePropertyLocation" value="Compartment"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FSPookCgEeifG4HmccecKA" type="Class_MetaclassNameLabel"/>
+    <element xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FSPoo0CgEeifG4HmccecKA" x="300" y="160" width="121"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_FSYyk0CgEeifG4HmccecKA" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_FSYylECgEeifG4HmccecKA"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_FSYylkCgEeifG4HmccecKA" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FSYylUCgEeifG4HmccecKA" x="660" y="240"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_jNaRUUCfEeifG4HmccecKA" name="diagram_compatibility_version" stringValue="1.3.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_jNaRUkCfEeifG4HmccecKA"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_jNaRU0CfEeifG4HmccecKA" diagramKindId="org.eclipse.papyrus.uml.diagram.profile">
+    <owner xmi:type="uml:Profile" href="Hackday.profile.uml#_XImboECfEeifG4HmccecKA"/>
+  </styles>
+  <element xmi:type="uml:Profile" href="Hackday.profile.uml#_XImboECfEeifG4HmccecKA"/>
+  <edges xmi:type="notation:Connector" xmi:id="_FSYyl0CgEeifG4HmccecKA" type="StereotypeCommentLink" source="_FSPooECgEeifG4HmccecKA" target="_FSYyk0CgEeifG4HmccecKA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_FSYymECgEeifG4HmccecKA"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_FSYynECgEeifG4HmccecKA" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FSYymUCgEeifG4HmccecKA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FSYymkCgEeifG4HmccecKA"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FSYym0CgEeifG4HmccecKA"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_GY5usECgEeifG4HmccecKA" type="Extension_Edge" source="_8vvcEECfEeifG4HmccecKA" target="_FSPooECgEeifG4HmccecKA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_GY5usUCgEeifG4HmccecKA"/>
+    <element xmi:type="uml:Extension" href="Hackday.profile.uml#_GYv9sECgEeifG4HmccecKA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GY5uskCgEeifG4HmccecKA" points="[360, 274, -643984, -643984]$[340, 210, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GZAcYECgEeifG4HmccecKA" id="(0.4462809917355372,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GZAcYUCgEeifG4HmccecKA" id="(0.49586776859504134,1.0)"/>
+  </edges>
+</notation:Diagram>
