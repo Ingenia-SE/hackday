@@ -3720,7 +3720,7 @@
       <children xmi:type="notation:Compartment" xmi:id="_vtZoFEFYEei7HYyJMN3YDw" type="Flow Properties"/>
       <children xmi:type="notation:Compartment" xmi:id="_vtaPIEFYEei7HYyJMN3YDw" type="Parameters"/>
       <element xmi:type="uml:Class" href="Hackday1.uml#_uXp9IEFYEei7HYyJMN3YDw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vtThcUFYEei7HYyJMN3YDw" x="200" y="120"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vtThcUFYEei7HYyJMN3YDw" x="220" y="116"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_vtdSc0FYEei7HYyJMN3YDw" type="StereotypeComment">
       <styles xmi:type="notation:TitleStyle" xmi:id="_vtdSdEFYEei7HYyJMN3YDw"/>
@@ -4371,7 +4371,7 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_YErN0UFZEei7HYyJMN3YDw"/>
       <element xmi:type="uml:Association" href="Hackday1.uml#_YAc1IEFZEei7HYyJMN3YDw"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YErN0kFZEei7HYyJMN3YDw" points="[420, 40, -643984, -643984]$[420, 80, -643984, -643984]$[260, 80, -643984, -643984]$[260, 120, -643984, -643984]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YErN0kFZEei7HYyJMN3YDw" points="[420, 40, -643984, -643984]$[420, 80, -643984, -643984]$[260, 80, -643984, -643984]$[280, 80, -643984, -643984]$[280, 116, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YFklsEFZEei7HYyJMN3YDw" id="(0.4,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YFklsUFZEei7HYyJMN3YDw" id="(0.6,0.0)"/>
     </edges>
