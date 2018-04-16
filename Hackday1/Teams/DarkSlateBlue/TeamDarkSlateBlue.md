@@ -1,7 +1,3 @@
-# Team Blue
+# Team DarkSlateBlue
 
-* Alicia
-* Koro
-* Juan
-* Eduardo
-* Iván
+* Ricardo
