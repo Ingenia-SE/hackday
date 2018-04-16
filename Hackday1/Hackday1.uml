@@ -367,7 +367,7 @@ Status: Draft</body>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_g6mssEFZEei7HYyJMN3YDw" name="Path"/>
           <packagedElement xmi:type="uml:Class" xmi:id="_ixWL4EFZEei7HYyJMN3YDw" name="Script"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_n8gpMEFZEei7HYyJMN3YDw" name="SacarCodigo"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_n8gpMEFZEei7HYyJMN3YDw" name="Conexion Matlab-VRep"/>
           <packagedElement xmi:type="uml:Class" xmi:id="_q1iEwEFZEei7HYyJMN3YDw" name="Video"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_9oNWEEFYEei7HYyJMN3YDw" name="Block2" memberEnd="_9oOkMUFYEei7HYyJMN3YDw _9oPLQUFYEei7HYyJMN3YDw">
