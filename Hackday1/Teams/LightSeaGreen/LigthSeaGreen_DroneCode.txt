@@ -1,0 +1,20 @@
+vrep=remApi('remoteApi'); %Crear el objeto vrep y cargar la libreria
+clientID=vrep.simxStart('127.0.0.1',19999,true,true,5000,5) %Iniciar conexion con el simulador
+vrep.simxFinish(clientID); %Terminar la conexion
+
+%Conectarse con el simulador
+vrep=remApi('remoteApi');
+clientID=vrep.simxStart('127.0.0.1',19999,true,true,5000,5);
+ 
+if (clientID ~=-1)
+ 
+    %Crear un handle para los motores
+
+    [err, target]=vrep.simxGetObjectHandle(clientID, 'Quadricopter_target', vrep.simx_opmode_oneshot_wait);
+    while (vrep.simxGetConnectionId(clientID)~=-1) %Mientras la simulacion este activa hay que correr el bucle
+        %Cambiar la velocidad de los motores
+        vrep.simxSetObjectPosition(clientID, target,-1,[1 1 1],vrep.simx_opmode_streaming);
+    end
+end
+ 
+vrep.simxFinish(clientID);
