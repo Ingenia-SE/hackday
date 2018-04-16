@@ -1,0 +1,24 @@
+path=simGetObjectHandle('Path')
+box=simGetObjectHandle('Cuboid') -- make sure the cuboid is static!
+pathLength=simGetPathLength(path)
+posOnPath=0 -- varies between 0 (start) and pathLength (end)
+v=2 -- velocity of the movement on the path (1cm/s)
+
+while true do
+
+	l=posOnPath/pathLength
+	if (l>1) then
+		l=1
+	end
+
+	position=simGetPositionOnPath(path,l)
+	orientation=simGetOrientationOnPath(path,l)
+--position[3]=0.05
+simAddStatusbarMessage(position[3])
+	simSetObjectPosition(box,-1,position)
+	simSetObjectOrientation(box,-1,orientation)
+
+	posOnPath=posOnPath+v*simGetSimulationTimeStep()
+
+	simSwitchThread() -- do not waste time in the same simulation step!
+end
