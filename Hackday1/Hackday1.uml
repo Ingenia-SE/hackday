@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:HackdayProfile="http:///schemas/HackdayProfile/_khFqQECgEeifG4HmccecKA/0" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http:///schemas/HackdayProfile/_khFqQECgEeifG4HmccecKA/0 Hackday.profile.uml#_khJUoECgEeifG4HmccecKA http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
   <uml:Model xmi:id="_5RK08EAGEeifG4HmccecKA" name="Hackday1">
     <ownedComment xmi:type="uml:Comment" xmi:id="_IgLVwEAHEeifG4HmccecKA">
       <body>The Hackday 1 challenge is a one day challenge to capture a video of a firefight drone operating on a structure on fire. The purpose of the challenge is to break the ice concering the implementation of a drone system for the MBZIRC challenge. </body>
@@ -251,7 +251,6 @@ Status: Draft</body>
           </nestedClassifier>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_yMGE4ECkEeifG4HmccecKA" name="Other Requirements"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_ITi_MEDcEeifG4HmccecKA" name="CopyOf_Code Quality_9"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_e-r6YEDcEeifG4HmccecKA" name="Model Quality"/>
         <packagedElement xmi:type="uml:Association" xmi:id="_6qodAEDcEeifG4HmccecKA" name="Block10" memberEnd="_6qpEEEDcEeifG4HmccecKA _6qprIEDcEeifG4HmccecKA">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6qodAUDcEeifG4HmccecKA" source="org.eclipse.papyrus">
@@ -322,19 +321,6 @@ Status: Draft</body>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_us9oYECgEeifG4HmccecKA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_utJOkECgEeifG4HmccecKA" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_utJOkUCgEeifG4HmccecKA" key="Version" value="0.0.1"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_utJOkkCgEeifG4HmccecKA" key="Comment" value="A profile for stereotyping hackday models."/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_utJOk0CgEeifG4HmccecKA" key="Copyright" value="(C) rsanz.com"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_utJOlECgEeifG4HmccecKA" key="Date" value="2018-04-15"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_utJOlUCgEeifG4HmccecKA" key="Author" value="Ricardo Sanz"/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_us-PcECgEeifG4HmccecKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="Hackday.profile.uml#_khJUoECgEeifG4HmccecKA"/>
-      </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="Hackday.profile.uml#_XImboECfEeifG4HmccecKA"/>
-    </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_z0XYkEAHEeifG4HmccecKA" base_Class="_zskugEAHEeifG4HmccecKA"/>
   <Blocks:Block xmi:id="_02EGIEAHEeifG4HmccecKA" base_Class="_018xYEAHEeifG4HmccecKA"/>
@@ -367,16 +353,8 @@ Status: Draft</body>
   <Requirements:Requirement xmi:id="_wF2OQECdEeifG4HmccecKA" base_Class="_wFwusECdEeifG4HmccecKA" id="R-2.1" text="The application is used to pilot the drone; automatically and/or manually.&#xD;&#xA;"/>
   <Requirements:Requirement xmi:id="_M8jT0ECeEeifG4HmccecKA" base_Class="_M8dNMECeEeifG4HmccecKA" id="R-2.2" text="The human pilot may use the UI resources of a common computer -mouse, keyboard, screen- to operate the drone in addition to the automatic control by the application. &#xD;&#xA;"/>
   <Blocks:Block xmi:id="_FLbrcECfEeifG4HmccecKA" base_Class="_FLWL4ECfEeifG4HmccecKA"/>
-  <HackdayProfile:Milestone xmi:id="_w52WsECgEeifG4HmccecKA" base_Class="_HOZ8sECHEeifG4HmccecKA"/>
-  <HackdayProfile:Milestone xmi:id="_0aNfEECgEeifG4HmccecKA" base_Class="_ItjbQECHEeifG4HmccecKA"/>
-  <HackdayProfile:Milestone xmi:id="_2E77gECgEeifG4HmccecKA" base_Class="_Kh9_MECHEeifG4HmccecKA"/>
-  <HackdayProfile:Milestone xmi:id="_3vCF0ECgEeifG4HmccecKA" base_Class="_MGLj8ECHEeifG4HmccecKA"/>
-  <HackdayProfile:Milestone xmi:id="_4gxEwECgEeifG4HmccecKA" base_Class="_Paud4ECHEeifG4HmccecKA"/>
-  <HackdayProfile:Milestone xmi:id="_5X7WQECgEeifG4HmccecKA" base_Class="_RB1loECHEeifG4HmccecKA"/>
-  <HackdayProfile:Milestone xmi:id="_6OdVoECgEeifG4HmccecKA" base_Class="_TxykwECHEeifG4HmccecKA"/>
   <Blocks:Block xmi:id="_yMLkcECkEeifG4HmccecKA" base_Class="_yMGE4ECkEeifG4HmccecKA"/>
   <Requirements:Requirement xmi:id="_Z_oEkEDKEeifG4HmccecKA" base_Class="_Z_jMEEDKEeifG4HmccecKA" id="R-3.2" text="Final and intermediate SoI milestones will be evaluated."/>
   <Requirements:Requirement xmi:id="_Ixa2sEDLEeifG4HmccecKA" base_Class="_IxV-MEDLEeifG4HmccecKA" id="R-3.3" text="System quality will be assessed."/>
-  <Blocks:Block xmi:id="_IToewEDcEeifG4HmccecKA" base_Class="_ITi_MEDcEeifG4HmccecKA"/>
   <Blocks:Block xmi:id="_e-yBAEDcEeifG4HmccecKA" base_Class="_e-r6YEDcEeifG4HmccecKA"/>
 </xmi:XMI>
