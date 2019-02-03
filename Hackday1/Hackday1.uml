@@ -2,12 +2,13 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
   <uml:Model xmi:id="_5RK08EAGEeifG4HmccecKA" name="Hackday1">
     <ownedComment xmi:type="uml:Comment" xmi:id="_IgLVwEAHEeifG4HmccecKA">
-      <body>The Hackday 1 challenge is a one day challenge to capture a video of a firefight drone operating on a structure on fire. The purpose of the challenge is to break the ice concering the implementation of a drone system for the MBZIRC challenge. </body>
+      <body>The Hackday 1 challenge is a one day challenge to capture a video of a firefight drone operating on a structure on fire. The purpose of the challenge is to break the ice concering the implementation of a drone system for the MBZIRC 2020 cC
+hallenge 3. </body>
     </ownedComment>
     <ownedComment xmi:type="uml:Comment" xmi:id="_otJMgEAHEeifG4HmccecKA">
       <body>Author: RS
-Date: 2018/04/16
-Version: 1.0
+Date: 2019/02/03
+Version: 1.1
 Status: Draft</body>
     </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_51VR8EAGEeifG4HmccecKA">
@@ -236,7 +237,7 @@ Status: Draft</body>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_Kh9_MECHEeifG4HmccecKA" name="Fly drone"/>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_MGLj8ECHEeifG4HmccecKA" name="Fly drone by controller"/>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_Paud4ECHEeifG4HmccecKA" name="Capture video"/>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_RB1loECHEeifG4HmccecKA" name="Capture MBZIRC video"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_RB1loECHEeifG4HmccecKA" name="Capture MBZIRC-like video"/>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_TxykwECHEeifG4HmccecKA" name="Upload controller, model and video"/>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_1Y6XQECFEeifG4HmccecKA" name="Acceptance Evaluation">
@@ -328,8 +329,8 @@ Status: Draft</body>
   <Blocks:Block xmi:id="_2iNe4EAHEeifG4HmccecKA" base_Class="_2iGKIEAHEeifG4HmccecKA"/>
   <Blocks:Block xmi:id="_4pEdsEAHEeifG4HmccecKA" base_Class="_4o9wAEAHEeifG4HmccecKA"/>
   <Blocks:Block xmi:id="_DrQYwEAIEeifG4HmccecKA" base_Class="_DrJrEEAIEeifG4HmccecKA"/>
-  <Requirements:Requirement xmi:id="_tC4g4EALEeifG4HmccecKA" base_Class="_tCv-AEALEeifG4HmccecKA" id="R-0" text="A system (the system-of-interest - SoI) will be implemented to simulate the MBZIRC challenge of a drone fighting a fire in a building. The drome will be controlled by a program. Grading will be multidimensional and competitive.&#xA;"/>
-  <Requirements:Requirement xmi:id="_Rl05YEAMEeifG4HmccecKA" base_Class="_RluywEAMEeifG4HmccecKA" id="R-1" text="The system shall simulate the MBZIRC challenge of a drone fighting a fire in a building."/>
+  <Requirements:Requirement xmi:id="_tC4g4EALEeifG4HmccecKA" base_Class="_tCv-AEALEeifG4HmccecKA" id="R-0" text="A system (the system-of-interest - SoI) will be implemented to simulate the MBZIRC 2020 Challenge 3: a drone fighting a fire in a building. &#xA;The drome will be controlled by a program. Grading will be multidimensional and competitive.&#xA;"/>
+  <Requirements:Requirement xmi:id="_Rl05YEAMEeifG4HmccecKA" base_Class="_RluywEAMEeifG4HmccecKA" id="R-1" text="The system shall simulate the MBZIRC 2020 Challenge 3 of a drone fighting a fire in a building. Participation of ground vehicle is not necessary.&#xA;"/>
   <Requirements:Requirement xmi:id="_YfGeUEAMEeifG4HmccecKA" base_Class="_YfA-wEAMEeifG4HmccecKA" id="R-2" text="Drone is controlled by software."/>
   <Requirements:Requirement xmi:id="_cZhsgEAMEeifG4HmccecKA" base_Class="_cZcM8EAMEeifG4HmccecKA" id="R-3" text="Grading will be multidimensional."/>
   <Requirements:Requirement xmi:id="_gwKVkEAMEeifG4HmccecKA" base_Class="_gwE2AEAMEeifG4HmccecKA" id="R-3.1" text="Requirement fulfillment will be evaluated so it is important to address all them adequately."/>
