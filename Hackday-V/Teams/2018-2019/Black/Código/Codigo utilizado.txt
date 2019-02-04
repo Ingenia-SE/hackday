@@ -1,0 +1,36 @@
+Para la realización de este este hackaday se ha utilizado herramientas desarrolladas por terceros y se han configurado para la utilización en este proyecto.
+
+Este proyecto se ha realizado para ser utilizado en un sistema con ubuntu 16.04 y con la distribución de ROS Kinetic.
+
+A continuación se describen las herramientas utilizadas:
+
+Para la relización de la simulacion:
+	gazebo + Sphinx
+		(http://gazebosim.org/)
+		(https://developer.parrot.com/docs/sphinx/whatissphinx.html)
+	
+	Para instalar Sphinx:
+
+		sudo apt-get install parrot-sphinx
+
+		sudo systemctl start firmwared.service
+
+	Gazebo se encuentra instalado en ROS-Kinetic por defecto.
+	
+	Para lanzar la simulación se utiliza el modelo de Spnix que se encuentra en:
+
+		sphinx /opt/parrot-sphinx/usr/share/sphinx/drones/bebop2.drone 
+	
+	Se añaden los modelos de gazebo:
+		House 1 (simulación edificio)
+		Sphere (simula el fuego)
+
+Para el control del dron se han utilizado dos nodos desarrollados por terceros:
+
+	bebop_driver (https://github.com/AutonomyLab/bebop_autonomy): Mensajes de control del dron.
+
+	teleop_twist_keyboard (https://github.com/ros-teleop/teleop_twist_keyboard): Control del dron utilizando el teclado.
+	
+
+
+
