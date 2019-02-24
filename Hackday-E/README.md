@@ -1,6 +1,6 @@
 # Hackday E
 
-The purpose of today is the *development of a full application* during the class. This is team work. *New* small teams will be used for this task. The teams will use an embedded computer to create a system to fulfil a mission. 
+The purpose of today is the *development of a full application* during the class. This is team work. **New** small teams will be used for this task. The teams will use an embedded computer to create a system to fulfil a mission. 
 
 The purpose of today is the development of an embedded application during the class. The teams will use a specific embedded platform as target. Any computer can be used as host. The application will be demonstrated by successful execution of mission.
 
