@@ -1,4 +1,4 @@
-Hackday E
+# Hackday E
 
 The purpose of today is the *development of a full application* during the class. This is team work. *New* small teams will be used for this task. The teams will use an embedded computer to create a system to fulfil a mission. 
 
