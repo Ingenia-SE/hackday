@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+  <uml:Model xmi:id="_U2NTkDjnEem-5vIjFEINXQ" name="Hackday E">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_U7PkkDjnEem-5vIjFEINXQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_U7rpcDjnEem-5vIjFEINXQ">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XRHPwDjnEem-5vIjFEINXQ" name="Design">
+      <packagedElement xmi:type="uml:Package" xmi:id="_cnthADjnEem-5vIjFEINXQ" name="Requirement_Analysis">
+        <packagedElement xmi:type="uml:Class" xmi:id="_NqHq4DjoEem-5vIjFEINXQ" name="Morse Messaging">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_vkb0QDjoEem-5vIjFEINXQ" name="Message (Host)"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_wcmyYDjoEem-5vIjFEINXQ" name="Message (Target)"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_x_oEUDjoEem-5vIjFEINXQ" name="Download the message"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_b9xhQDjpEem-5vIjFEINXQ" name="Start/Stop"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_g3WfUDjpEem-5vIjFEINXQ" name="Build an independent application"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_8vvNYDjnEem-5vIjFEINXQ" name="Software">
+        <packagedElement xmi:type="uml:Class" xmi:id="_m5Qh8DjqEem-5vIjFEINXQ" name="Morse messaging device"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0oIswDjqEem-5vIjFEINXQ" name="Host (Computer)"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_02QBQDjqEem-5vIjFEINXQ" name="Target (XMC 2Go)"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_J1c_EDjrEem-5vIjFEINXQ" name="Block4" memberEnd="_J1e0QDjrEem-5vIjFEINXQ _J1fbUjjrEem-5vIjFEINXQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J1eNMDjrEem-5vIjFEINXQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J1eNMTjrEem-5vIjFEINXQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_J1fbUjjrEem-5vIjFEINXQ" name="morse messaging device" type="_m5Qh8DjqEem-5vIjFEINXQ" association="_J1c_EDjrEem-5vIjFEINXQ"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_J1e0QDjrEem-5vIjFEINXQ" name="host (computer)" type="_0oIswDjqEem-5vIjFEINXQ" aggregation="composite" association="_J1c_EDjrEem-5vIjFEINXQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J1fbUDjrEem-5vIjFEINXQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J1fbUTjrEem-5vIjFEINXQ" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_LBcREDjrEem-5vIjFEINXQ" name="Block5" memberEnd="_LBcREzjrEem-5vIjFEINXQ _LBc4IjjrEem-5vIjFEINXQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LBcRETjrEem-5vIjFEINXQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LBcREjjrEem-5vIjFEINXQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_LBc4IjjrEem-5vIjFEINXQ" name="morse messaging device" type="_m5Qh8DjqEem-5vIjFEINXQ" association="_LBcREDjrEem-5vIjFEINXQ"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_LBcREzjrEem-5vIjFEINXQ" name="target (xmc 2go)" type="_02QBQDjqEem-5vIjFEINXQ" aggregation="composite" association="_LBcREDjrEem-5vIjFEINXQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LBc4IDjrEem-5vIjFEINXQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LBc4ITjrEem-5vIjFEINXQ" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_V6I48DjrEem-5vIjFEINXQ" name="Block6" memberEnd="_V6KHEjjrEem-5vIjFEINXQ _V6KuIDjrEem-5vIjFEINXQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_V6KHEDjrEem-5vIjFEINXQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_V6KHETjrEem-5vIjFEINXQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_V6KHEjjrEem-5vIjFEINXQ" name="target (xmc 2go)" type="_02QBQDjqEem-5vIjFEINXQ" association="_V6I48DjrEem-5vIjFEINXQ"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_V6KuIDjrEem-5vIjFEINXQ" name="host (computer)" type="_0oIswDjqEem-5vIjFEINXQ" association="_V6I48DjrEem-5vIjFEINXQ"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U7ElcDjnEem-5vIjFEINXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7HowDjnEem-5vIjFEINXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U7I24DjnEem-5vIjFEINXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7Jd8DjnEem-5vIjFEINXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U7L6MDjnEem-5vIjFEINXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7L6MTjnEem-5vIjFEINXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U7MhQDjnEem-5vIjFEINXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7MhQTjnEem-5vIjFEINXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U7MhQjjnEem-5vIjFEINXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7NIUDjnEem-5vIjFEINXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U7NIUTjnEem-5vIjFEINXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7NIUjjnEem-5vIjFEINXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U7NvYDjnEem-5vIjFEINXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7NvYTjnEem-5vIjFEINXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U7NvYjjnEem-5vIjFEINXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7OWcDjnEem-5vIjFEINXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U7OWcTjnEem-5vIjFEINXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7OWcjjnEem-5vIjFEINXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U7O9gDjnEem-5vIjFEINXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7O9gTjnEem-5vIjFEINXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_Nqbz8DjoEem-5vIjFEINXQ" base_Class="_NqHq4DjoEem-5vIjFEINXQ" id="S.1" text="Development of an E.A for Morse messaging using LEDs"/>
+  <Requirements:Requirement xmi:id="_vkfeoDjoEem-5vIjFEINXQ" base_Class="_vkb0QDjoEem-5vIjFEINXQ" id="S 1.1" text="The message must be specified in a computer (host)."/>
+  <Requirements:Requirement xmi:id="_wcp1sDjoEem-5vIjFEINXQ" base_Class="_wcmyYDjoEem-5vIjFEINXQ" id="S 1.2" text="The message must be uploaded into an embedded computer (target)&#xD;&#xA;"/>
+  <Requirements:Requirement xmi:id="_x_rHoDjoEem-5vIjFEINXQ" base_Class="_x_oEUDjoEem-5vIjFEINXQ" id="S 1.3" text="The message must be available to download from the target."/>
+  <Requirements:Requirement xmi:id="_b90kkDjpEem-5vIjFEINXQ" base_Class="_b9xhQDjpEem-5vIjFEINXQ" id="S 1.4" text="Start/Stop should be controlled by the host."/>
+  <Requirements:Requirement xmi:id="_g3ZioDjpEem-5vIjFEINXQ" base_Class="_g3WfUDjpEem-5vIjFEINXQ" id="S 1.5" text="The interaction must be done using and independent application (no IDE running).&#xD;&#xA;"/>
+  <Blocks:Block xmi:id="_m5UMUDjqEem-5vIjFEINXQ" base_Class="_m5Qh8DjqEem-5vIjFEINXQ"/>
+  <Blocks:Block xmi:id="_0oKh8DjqEem-5vIjFEINXQ" base_Class="_0oIswDjqEem-5vIjFEINXQ"/>
+  <Blocks:Block xmi:id="_02SdgDjqEem-5vIjFEINXQ" base_Class="_02QBQDjqEem-5vIjFEINXQ"/>
+</xmi:XMI>

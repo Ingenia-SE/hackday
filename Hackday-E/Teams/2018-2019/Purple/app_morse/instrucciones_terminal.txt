@@ -1,0 +1,12 @@
+> powershell
+> [System.IO.Ports.SerialPort]::getportnames()
+> $port= new-Object System.IO.Ports.SerialPort COM#,Baudrate,None,8,one
+
+
+$port.open()
+
+$port.WriteLine("some string")
+
+$port.Read()
+
+$port.Close()
