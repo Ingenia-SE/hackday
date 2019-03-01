@@ -1,0 +1,1 @@
+Para ejecutar el código sin necesidad de utilizar el IDE, se puede utilizar PowerShell para realizar la comunicación en serie entre el ordenador y la placa a través del puerto correspondiente.
